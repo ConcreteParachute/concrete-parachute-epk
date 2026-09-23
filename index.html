@@ -84,50 +84,41 @@
     <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-16">
 
     
-<!-- CURATED AUDIO SECTION -->
-<section id="audio" class="space-y-6 scroll-mt-20">
-    <div class="border-l-4 border-retro-coral pl-4">
-        <h2 class="text-2xl font-black uppercase tracking-wide text-white">Featured Tracks</h2>
-        <p class="text-xs uppercase tracking-widest font-bold text-retro-palmgreen">Selected Singles & Demos</p>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-6">
-        <!-- Released Single (Spotify Player Embed) -->
-        <div class="bg-retro-card border border-zinc-800 rounded-xl p-4 shadow-xl space-y-3">
-            <div class="flex justify-between items-center">
-                <span class="text-xs text-retro-coral font-bold uppercase tracking-wider">Lead Single</span>
-                <span class="text-[10px] text-zinc-400 uppercase font-semibold bg-zinc-900 px-2 py-0.5 rounded border border-zinc-800">Spotify</span>
+    <!-- CURATED AUDIO SECTION -->
+        <section id="audio" class="space-y-6 scroll-mt-20">
+            <div class="border-l-4 border-retro-coral pl-4">
+                <h2 class="text-2xl font-black uppercase tracking-wide text-white">Featured Studio Tracks</h2>
+                <p class="text-xs uppercase tracking-widest font-bold text-retro-palmgreen">Selected Singles</p>
             </div>
-            <!-- Replace SPOTIFY_TRACK_ID with your actual Spotify song ID -->
-            <iframe 
-                style="border-radius:12px" 
-                src="https://open.spotify.com/embed/track/1SuJ0G1ojA1iKn1LrJJHtF?utm_source=generator&theme=0" 
-                width="100%" 
-                height="152" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
-        </div>
-
-        <!-- Unreleased Demo (Direct Audio File) -->
-        <div class="bg-retro-card border border-zinc-800 rounded-xl p-4 shadow-xl space-y-3 flex flex-col justify-between">
-            <div class="space-y-1">
-                <div class="flex justify-between items-center">
-                    <span class="text-xs text-retro-turquoise font-bold uppercase tracking-wider">Unreleased Demo</span>
-                    <span class="text-[10px] text-zinc-400 uppercase font-semibold bg-zinc-900 px-2 py-0.5 rounded border border-zinc-800">Direct Audio</span>
+            
+            <div class="space-y-4">
+                <!-- Track 1 -->
+                <div class="bg-retro-card border border-zinc-800 rounded-lg p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <div class="text-xs text-retro-coral font-bold uppercase tracking-wider">Lead Single</div>
+                        <h3 class="text-base font-bold text-white">Torrent</h3>
+                        <p class="text-xs text-zinc-400">5:00</p>
+                    </div>
+                    <audio controls class="w-full sm:w-72 h-10 accent-retro-coral bg-zinc-900 rounded-md">
+                        <source src="https://raw.githubusercontent.com/ConcreteParachute/concrete-parachute-epk/main/audio/track1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
-                <h3 class="text-lg font-bold text-white">Drifting Awake</h3>
-                <p class="text-xs text-zinc-400">Exclusive unreleased preview (2:59)</p>
+
+                <!-- Track 2 -->
+                <div class="bg-retro-card border border-zinc-800 rounded-lg p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <div class="text-xs text-retro-turquoise font-bold uppercase tracking-wider">Unreleased Demo</div>
+                        <h3 class="text-base font-bold text-white">Drifting Awake</h3>
+                        <p class="text-xs text-zinc-400">2:59</p>
+                    </div>
+                    <audio controls class="w-full sm:w-72 h-10 accent-retro-coral bg-zinc-900 rounded-md">
+                        <source src="https://raw.githubusercontent.com/ConcreteParachute/concrete-parachute-epk/main/audio/track2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <audio controls class="w-full h-10 accent-retro-coral bg-zinc-900 rounded-md mt-2">
-                <source src="https://raw.githubusercontent.com/ConcreteParachute/concrete-parachute-epk/main/audio/track2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </div>
-</section>
+        </section>
         
         <!-- LIVE PERFORMANCE VIDEO -->
         <section id="videos" class="space-y-6 scroll-mt-20">
