@@ -6,12 +6,21 @@
     <title>Concrete Parachute | Official Press Kit</title>
     <meta name="description" content="Official Electronic Press Kit for Concrete Parachute | Heavy Melodic Rock from Atlanta, GA.">
     
+    <!-- Google Fonts: Roboto (Body) & Montserrat (Headers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        header: ['Montserrat', 'sans-serif'],
+                    },
                     colors: {
                         retro: {
                             dark: '#121516',        // Warm dark background
@@ -27,6 +36,12 @@
             }
         }
     </script>
+    
+    <style>
+        h1, h2, h3, .font-header { font-family: 'Oswald', sans-serif; }
+        body { font-family: 'Roboto', sans-serif; }
+    </style>
+
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
