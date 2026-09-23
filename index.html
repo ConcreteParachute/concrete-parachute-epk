@@ -378,8 +378,14 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
-        // Automatically update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
+       // Automatically format dynamic copyright year (e.g., "2026" or "2026–2027")
+const startYear = 2025;
+const currentYear = new Date().getFullYear();
+const yearSpan = document.getElementById('year');
+
+yearSpan.textContent = currentYear > startYear 
+    ? `${startYear}–${currentYear}` 
+    : `${startYear}`;
     </script>
 </body>
 </html>
